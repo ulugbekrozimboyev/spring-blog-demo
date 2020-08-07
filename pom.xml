@@ -56,6 +56,12 @@
             <version>${mapstruct.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>io.github.jhipster</groupId>
+            <artifactId>jhipster-framework</artifactId>
+            <version>3.0.1</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
 
 
