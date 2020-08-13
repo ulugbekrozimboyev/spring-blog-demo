@@ -28,9 +28,6 @@ public class LoginController {
 
     private static final Logger log = LoggerFactory.getLogger(LoginController.class);
 
-    @Value("${auth.redirect.ip}")
-    private String redirectUrl;
-
     @Autowired
     private AuthenticationManager authenticationManager;
 
@@ -62,7 +59,7 @@ public class LoginController {
     }
 
     @GetMapping("/account/get")
-    public ResponseEntity<AccountDto> getAcccount() {
+    public ResponseEntity<AccountDto> getAccount() {
         log.debug("REST request to get Account : {}");
 
         UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
